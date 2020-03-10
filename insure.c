@@ -1,28 +1,23 @@
 #include<stdio.h>
-char main()
+void main()
 {
-char m,g;
 int age;
-printf("Enter age\n");
-scanf("%d", &age);
-printf("Enter martial status and gender\n");
-scanf("%c%c", &m,&g);
-/*printf("Enter gender\n");
-scanf("%c", &g);*/
-printf("The given input values are age=%d\n",age);
-printf("The given marital status=%c and gender=%c\n",m,g);
-/*if (m == 'm')
+char ms,ge;
+printf("Key in the age of the person to be insured or not\n");
+scanf("%d",&age);
+printf("Key in the martial status of the person to be insured or not\n");
+scanf(" %c",&ms);
+printf("Key in the gender of the person to be insured or not\n");
+scanf(" %c",&ge);
+printf("The given value of age of the person to be insured or not is =%d\n",age);
+printf("The given value of martial status of the person to be insured or not is =%c\n",ms);
+printf("The given value of gender of the person to be insured or not is =%c\n",ge);
+if (age > 25 && ms=='m' && ge=='f')
 {
-	printf("Insured\n");
-}*/
-if(m == 'u' && age > 25 && g == 'f')
-{
-	printf("Insured\n");
-}
-else if(m == 'u' && age > 30 && g == 'm')
-{
-	printf("Insured\n");
+printf("The person is insured");
 }
 else
-printf("Not insured\n");
+{
+printf("The person is not insured");
+}
 }
